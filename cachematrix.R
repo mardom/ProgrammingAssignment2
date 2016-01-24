@@ -1,8 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
-
+## This function takes x (assuming to be an invertible matrix)
+## and returns a list containing functions to set/get/set inverse/get inverse.
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
@@ -17,9 +14,9 @@ makeCacheMatrix <- function(x = matrix()) {
              getsolve = getsolve)
 }
 
-
-## Write a short comment describing this function
-
+## This function operates in the output of the previus function
+## returns the inverse of the matrix from cache (faster) or compute it 
+## otherwise.
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
 
